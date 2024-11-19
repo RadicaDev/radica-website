@@ -24,7 +24,17 @@ jobs:
     - name: Build the project
       run: npm run build
 
-    - name: Deploy to server
+    - name: Transfer files to server
+      uses: appleboy/scp-action@v0.1.7
+      with:
+        host: radica.dev
+        username: ubuntu
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        port: 22
+        source: dist
+        target: /tmp/
+
+    - name: Move files to nginx root
       uses: appleboy/ssh-action@v0.1.8
       with:
         host: radica.dev
@@ -32,9 +42,6 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: 22
         script: |
-          rm -rf /var/www/radica.dev/html/*
-          mkdir -p /var/www/radica.dev/html
-          tar -xzf site.tar.gz -C /var/www/radica.dev/html
-    - name: Package build files
-      run: tar -czf site.tar.gz -C dist .
-
+          rm -rf /var/www/radica.dev/html
+          mv /tmp/dist /tmp/html
+          mv /tmp/html /var/www/radica.dev/
