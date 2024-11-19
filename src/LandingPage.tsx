@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 
 import logo from "./assets/logo.png";
+import logoNoBackground from "./assets/logo-no-background.png";
 
 const LandingPage: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -96,7 +97,7 @@ const LandingPage: React.FC = () => {
             to="start"
             smooth={true}
             duration={500}
-            className="text-2xl font-bold cursor-pointer text-emerald-600 dark:text-emerald-400"
+            className="text-2xl font-bold cursor-pointer text-emerald-600 dark:text-teal-400"
           >
             Radica
           </Link>
@@ -107,7 +108,7 @@ const LandingPage: React.FC = () => {
               to="features"
               smooth={true}
               duration={500}
-              className="cursor-pointer text-gray-700 hover:text-emerald-600 dark:text-gray-300 dark:hover:text-emerald-400"
+              className="cursor-pointer text-gray-700 hover:text-emerald-600 dark:text-gray-300 dark:hover:text-teal-400"
             >
               Features
             </Link>
@@ -115,12 +116,12 @@ const LandingPage: React.FC = () => {
               to="how-it-works"
               smooth={true}
               duration={500}
-              className="cursor-pointer text-gray-700 hover:text-emerald-600 dark:text-gray-300 dark:hover:text-emerald-400"
+              className="cursor-pointer text-gray-700 hover:text-emerald-600 dark:text-gray-300 dark:hover:text-teal-400"
             >
               How It Works
             </Link>
             <a
-              className="bg-emerald-600 text-white px-4 py-2 rounded-full hover:bg-emerald-700 transition flex items-center dark:bg-emerald-500 dark:hover:bg-emerald-600"
+              className="bg-emerald-600 text-white px-4 py-2 rounded-full hover:bg-emerald-700 transition flex items-center dark:bg-teal-500 dark:hover:bg-teal-600"
               href="https://github.com/RadicaDev"
               target="_blank"
               rel="noopener noreferrer"
@@ -132,7 +133,7 @@ const LandingPage: React.FC = () => {
             {/* Dark Mode Toggle */}
             <button
               onClick={toggleDarkMode}
-              className="ml-4 text-gray-700 hover:text-emerald-600 dark:text-gray-300 dark:hover:text-emerald-400"
+              className="ml-4 text-gray-700 hover:text-emerald-600 dark:text-gray-300 dark:hover:text-teal-400"
             >
               {isDarkMode ? <Sun size={24} /> : <Moon size={24} />}
             </button>
@@ -143,13 +144,13 @@ const LandingPage: React.FC = () => {
             {/* Mobile Dark Mode Toggle */}
             <button
               onClick={toggleDarkMode}
-              className="text-emerald-600 dark:text-emerald-400"
+              className="text-emerald-600 dark:text-teal-400"
             >
               {isDarkMode ? <Sun size={24} /> : <Moon size={24} />}
             </button>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="text-emerald-600 dark:text-emerald-400"
+              className="text-emerald-600 dark:text-teal-400"
             >
               {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -170,7 +171,7 @@ const LandingPage: React.FC = () => {
                   to="features"
                   smooth={true}
                   duration={500}
-                  className="cursor-pointer text-gray-700 hover:text-emerald-600 dark:text-gray-300 dark:hover:text-emerald-400"
+                  className="cursor-pointer text-gray-700 hover:text-emerald-600 dark:text-gray-300 dark:hover:text-teal-400"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Features
@@ -179,13 +180,13 @@ const LandingPage: React.FC = () => {
                   to="how-it-works"
                   smooth={true}
                   duration={500}
-                  className="cursor-pointer text-gray-700 hover:text-emerald-600 dark:text-gray-300 dark:hover:text-emerald-400"
+                  className="cursor-pointer text-gray-700 hover:text-emerald-600 dark:text-gray-300 dark:hover:text-teal-400"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   How It Works
                 </Link>
                 <a
-                  className="bg-emerald-600 text-white px-4 py-2 rounded-full hover:bg-emerald-700 transition flex items-center dark:bg-emerald-500 dark:hover:bg-emerald-600"
+                  className="bg-emerald-600 text-white px-4 py-2 rounded-full hover:bg-emerald-700 transition flex items-center dark:bg-teal-500 dark:hover:bg-teal-600"
                   href="https://github.com/RadicaDev"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -212,7 +213,7 @@ const LandingPage: React.FC = () => {
         >
           <h1 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white">
             Product Authentication with{" "}
-            <span className="text-emerald-600 dark:text-emerald-400">
+            <span className="text-emerald-600 dark:text-teal-400">
               NFC & Blockchain
             </span>
           </h1>
@@ -222,10 +223,10 @@ const LandingPage: React.FC = () => {
             digital verification.
           </p>
           <div className="flex justify-center md:justify-start space-x-4">
-            <button className="bg-emerald-600 text-white px-4 py-2 md:px-6 md:py-3 rounded-full hover:bg-emerald-700 transition dark:bg-emerald-500 dark:hover:bg-emerald-600">
+            <button className="bg-emerald-600 text-white px-4 py-2 md:px-6 md:py-3 rounded-full hover:bg-emerald-700 transition dark:bg-teal-500 dark:hover:bg-teal-600">
               Request Demo
             </button>
-            <button className="border border-emerald-600 text-emerald-600 px-4 py-2 md:px-6 md:py-3 rounded-full hover:bg-emerald-50 transition dark:border-emerald-400 dark:text-emerald-400 dark:hover:bg-emerald-900/20">
+            <button className="border border-emerald-600 text-emerald-600 px-4 py-2 md:px-6 md:py-3 rounded-full hover:bg-emerald-50 transition dark:border-teal-400 dark:text-teal-400 dark:hover:bg-teal-900/20">
               Learn More
             </button>
           </div>
@@ -236,8 +237,8 @@ const LandingPage: React.FC = () => {
           className="w-full md:w-1/2 mb-8 md:mb-0 flex justify-center md:justify-end"
         >
           <img
-            src={logo}
-            alt="NFC Authentication"
+            src={isDarkMode ? logoNoBackground : logo}
+            alt="Radica Logo"
             className="rounded-xl shadow-2xl max-w-xs h-auto"
           />
         </motion.div>
@@ -278,7 +279,7 @@ const LandingPage: React.FC = () => {
               icon: (
                 <Shield
                   size={48}
-                  className="text-emerald-600 dark:text-emerald-400"
+                  className="text-emerald-600 dark:text-teal-400"
                 />
               ),
               title: "Unbreakable Security",
@@ -289,7 +290,7 @@ const LandingPage: React.FC = () => {
               icon: (
                 <Smartphone
                   size={48}
-                  className="text-emerald-600 dark:text-emerald-400"
+                  className="text-emerald-600 dark:text-teal-400"
                 />
               ),
               title: "Easy Verification",
@@ -300,7 +301,7 @@ const LandingPage: React.FC = () => {
               icon: (
                 <Database
                   size={48}
-                  className="text-emerald-600 dark:text-emerald-400"
+                  className="text-emerald-600 dark:text-teal-400"
                 />
               ),
               title: "Transparent Tracking",
@@ -311,7 +312,7 @@ const LandingPage: React.FC = () => {
               icon: (
                 <Lock
                   size={48}
-                  className="text-emerald-600 dark:text-emerald-400"
+                  className="text-emerald-600 dark:text-teal-400"
                 />
               ),
               title: "Counterfeit Prevention",
@@ -391,7 +392,7 @@ const LandingPage: React.FC = () => {
                 variants={itemVariants}
                 className="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-md text-center"
               >
-                <div className="text-5xl md:text-6xl font-bold text-emerald-600 dark:text-emerald-400 mb-4">
+                <div className="text-5xl md:text-6xl font-bold text-emerald-600 dark:text-teal-400 mb-4">
                   {step.number}
                 </div>
                 <h3 className="text-xl md:text-2xl font-bold mb-2 text-gray-900 dark:text-white">
@@ -407,7 +408,7 @@ const LandingPage: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-emerald-600 text-white py-16">
+      <section className="bg-emerald-600 text-white py-16 dark:bg-teal-700">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -422,13 +423,13 @@ const LandingPage: React.FC = () => {
           </motion.h2>
           <motion.p
             variants={itemVariants}
-            className="text-base md:text-xl mb-8 max-w-2xl mx-auto"
+            className="text-base md:text-xl mb-8 max-w-2xl mx-auto dark:text-gray-200"
           >
             Contact our team to implement cutting-edge NFC and blockchain
             authentication for your brand.
           </motion.p>
           <motion.div variants={itemVariants}>
-            <button className="bg-white text-emerald-600 px-6 py-3 rounded-full text-base md:text-xl font-bold hover:bg-emerald-50 transition">
+            <button className="bg-white text-emerald-600 px-6 py-3 rounded-full text-base md:text-xl font-bold hover:bg-teal-50 transition dark:text-teal-600">
               Coming Soon
             </button>
           </motion.div>
@@ -442,19 +443,19 @@ const LandingPage: React.FC = () => {
           <div className="flex space-x-4">
             <a
               href="#"
-              className="hover:text-emerald-400 dark:hover:text-emerald-300"
+              className="hover:text-emerald-400 dark:hover:text-teal-300"
             >
               Privacy Policy
             </a>
             <a
               href="#"
-              className="hover:text-emerald-400 dark:hover:text-emerald-300"
+              className="hover:text-emerald-400 dark:hover:text-teal-300"
             >
               Terms of Service
             </a>
             <a
               href="#"
-              className="hover:text-emerald-400 dark:hover:text-emerald-300"
+              className="hover:text-emerald-400 dark:hover:text-teal-300"
             >
               Contact
             </a>
