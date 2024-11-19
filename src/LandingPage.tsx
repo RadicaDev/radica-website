@@ -46,7 +46,7 @@ const LandingPage: React.FC = () => {
     return () => {
       darkModeMediaQuery.removeEventListener("change", handleDarkModeChange);
     };
-  }, [isDarkMode]);
+  }, []);
 
   // Apply dark mode to html element
   useEffect(() => {
