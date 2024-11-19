@@ -124,12 +124,15 @@ const LandingPage: React.FC = () => {
                 >
                   How It Works
                 </Link>
-                <button
-                  className="bg-emerald-600 text-white px-4 py-2 rounded-full hover:bg-emerald-700 transition"
-                  onClick={() => setMobileMenuOpen(false)}
+                <a
+                  className="bg-emerald-600 text-white px-4 py-2 rounded-full hover:bg-emerald-700 transition flex items-center"
+                  href="https://github.com/RadicaDev"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  Get Started
-                </button>
+                  <Github className="me-2 h-auto" />
+                  <p>GitHub</p>
+                </a>
               </div>
             </motion.div>
           )}
