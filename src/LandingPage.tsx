@@ -199,7 +199,6 @@ const LandingPage: React.FC = () => {
           )}
         </AnimatePresence>
       </nav>
-
       {/* Hero Section */}
       <motion.header
         initial="hidden"
@@ -243,7 +242,6 @@ const LandingPage: React.FC = () => {
           />
         </motion.div>
       </motion.header>
-
       {/* Features Section */}
       <section id="features" className="container mx-auto px-4 py-16">
         <motion.div
@@ -336,7 +334,6 @@ const LandingPage: React.FC = () => {
           ))}
         </motion.div>
       </section>
-
       {/* How It Works Section */}
       <section id="how-it-works" className="bg-gray-50 dark:bg-gray-800 py-16">
         <div className="container mx-auto px-4">
@@ -406,7 +403,6 @@ const LandingPage: React.FC = () => {
           </motion.div>
         </div>
       </section>
-
       {/* CTA Section */}
       <section className="bg-emerald-600 text-white py-16 dark:bg-teal-700">
         <motion.div
@@ -438,27 +434,10 @@ const LandingPage: React.FC = () => {
 
       {/* Footer */}
       <footer className="bg-gray-900 dark:bg-gray-800 text-white dark:text-gray-200 py-8">
-        <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-          <div className="text-2xl font-bold">Radica</div>
-          <div className="flex space-x-4">
-            <a
-              href="#"
-              className="hover:text-emerald-400 dark:hover:text-teal-300"
-            >
-              Privacy Policy
-            </a>
-            <a
-              href="#"
-              className="hover:text-emerald-400 dark:hover:text-teal-300"
-            >
-              Terms of Service
-            </a>
-            <a
-              href="#"
-              className="hover:text-emerald-400 dark:hover:text-teal-300"
-            >
-              Contact
-            </a>
+        <div className="container mx-auto px-4 flex flex-col items-center space-y-4">
+          <div className="text-2xl font-bold mb-2">Radica</div>
+          <div className="text-sm text-gray-400 dark:text-gray-500 text-center">
+            © {new Date().getFullYear()} Radica. All Rights Reserved.
           </div>
         </div>
       </footer>
