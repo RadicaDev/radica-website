@@ -28,7 +28,7 @@ jobs:
       uses: appleboy/scp-action@v0.1.7
       with:
         host: radica.dev
-        username: ubuntu
+        username: ${{ secrets.USER }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: 22
         source: dist
@@ -38,10 +38,10 @@ jobs:
       uses: appleboy/ssh-action@v0.1.8
       with:
         host: radica.dev
-        username: ubuntu
+        username: ${{ secrets.USER }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: 22
         script: |
-          rm -rf /var/www/radica.dev/html
+          rm -rf ${{ secrets.SITE_DIR }}/html
           mv /tmp/dist /tmp/html
-          mv /tmp/html /var/www/radica.dev/
+          mv /tmp/html ${{ secrets.SITE_DIR }}/
