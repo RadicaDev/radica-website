@@ -9,10 +9,10 @@ import {
   Lock,
   Menu,
   X,
-  Database,
   Github,
   Moon,
   Sun,
+  Award,
 } from "lucide-react";
 
 import logo from "./assets/logo.png";
@@ -218,16 +218,21 @@ const LandingPage: React.FC = () => {
           </h1>
           <p className="text-base md:text-xl text-gray-600 dark:text-gray-300">
             Revolutionize your product authentication using cutting-edge NFC and
-            blockchain technology. Protect against counterfeits with unbreakable
+            Blockchain technology. Protect against counterfeits with unbreakable
             digital verification.
           </p>
           <div className="flex justify-center md:justify-start space-x-4">
             <button className="bg-emerald-600 text-white px-4 py-2 md:px-6 md:py-3 rounded-full hover:bg-emerald-700 transition dark:bg-teal-500 dark:hover:bg-teal-600">
-              Request Demo
+              Try the Demo
             </button>
-            <button className="border border-emerald-600 text-emerald-600 px-4 py-2 md:px-6 md:py-3 rounded-full hover:bg-emerald-50 transition dark:border-teal-400 dark:text-teal-400 dark:hover:bg-teal-900/20">
+            <a
+              className="border border-emerald-600 text-emerald-600 px-4 py-2 md:px-6 md:py-3 rounded-full hover:bg-emerald-50 transition dark:border-teal-400 dark:text-teal-400 dark:hover:bg-teal-900/20"
+              href="https://docs.radica.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Learn More
-            </button>
+            </a>
           </div>
         </motion.div>
 
@@ -261,7 +266,7 @@ const LandingPage: React.FC = () => {
             className="text-base md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
           >
             Our innovative solution combines Near Field Communication (NFC) and
-            blockchain to create an unprecedented level of product
+            Blockchain to create an unprecedented level of product
             authentication.
           </motion.p>
         </motion.div>
@@ -275,14 +280,14 @@ const LandingPage: React.FC = () => {
           {[
             {
               icon: (
-                <Shield
+                <Lock
                   size={48}
                   className="text-emerald-600 dark:text-teal-400"
                 />
               ),
-              title: "Unbreakable Security",
+              title: "Counterfeit Prevention",
               description:
-                "Blockchain's immutable ledger ensures absolute authenticity.",
+                "Advanced cryptographic techniques stop forgery attempts.",
             },
             {
               icon: (
@@ -297,25 +302,24 @@ const LandingPage: React.FC = () => {
             },
             {
               icon: (
-                <Database
+                <Shield
                   size={48}
                   className="text-emerald-600 dark:text-teal-400"
                 />
               ),
-              title: "Transparent Tracking",
+              title: "Unbreakable Security",
               description:
-                "Complete product lifecycle tracking on decentralized networks.",
+                "Blockchain's immutable ledger ensures absolute authenticity.",
             },
             {
               icon: (
-                <Lock
+                <Award
                   size={48}
                   className="text-emerald-600 dark:text-teal-400"
                 />
               ),
-              title: "Counterfeit Prevention",
-              description:
-                "Advanced cryptographic techniques stop forgery attempts.",
+              title: "Get Ownership",
+              description: "Claim ownership over the product you own.",
             },
           ].map((feature, index) => (
             <motion.div
@@ -421,7 +425,7 @@ const LandingPage: React.FC = () => {
             variants={itemVariants}
             className="text-base md:text-xl mb-8 max-w-2xl mx-auto dark:text-gray-200"
           >
-            Contact our team to implement cutting-edge NFC and blockchain
+            Contact our team to implement cutting-edge NFC and Blockchain
             authentication for your brand.
           </motion.p>
           <motion.div variants={itemVariants}>
