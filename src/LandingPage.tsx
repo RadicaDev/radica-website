@@ -222,9 +222,14 @@ const LandingPage: React.FC = () => {
             digital verification.
           </p>
           <div className="flex justify-center md:justify-start space-x-4">
-            <button className="bg-emerald-600 text-white px-4 py-2 md:px-6 md:py-3 rounded-full hover:bg-emerald-700 transition dark:bg-teal-500 dark:hover:bg-teal-600">
+            <a
+              className="bg-emerald-600 text-white px-4 py-2 md:px-6 md:py-3 rounded-full hover:bg-emerald-700 transition dark:bg-teal-500 dark:hover:bg-teal-600"
+              href="https://docs.radica.dev/docs/demo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Try the Demo
-            </button>
+            </a>
             <a
               className="border border-emerald-600 text-emerald-600 px-4 py-2 md:px-6 md:py-3 rounded-full hover:bg-emerald-50 transition dark:border-teal-400 dark:text-teal-400 dark:hover:bg-teal-900/20"
               href="https://docs.radica.dev"
